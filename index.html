@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双人贪吃蛇游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>双人贪吃蛇游戏</h1>
+        <div class="game-info">
+            <div class="score">
+                <div class="player1-score">玩家1得分: <span id="player1-score">0</span></div>
+                <div class="player2-score">玩家2得分: <span id="player2-score">0</span></div>
+            </div>
+            <div class="controls-info">
+                <div class="player1-controls">玩家1控制: W上 S下 A左 D右</div>
+                <div class="player2-controls">玩家2控制: ↑上 ↓下 ←左 →右</div>
+            </div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="game-controls">
+            <button id="startButton">开始游戏</button>
+            <button id="pauseButton">暂停游戏</button>
+            <button id="resetButton">重置游戏</button>
+        </div>
+        <div id="gameOverModal" class="modal">
+            <div class="modal-content">
+                <h2 id="winnerText">游戏结束</h2>
+                <button id="restartButton">再来一局</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
